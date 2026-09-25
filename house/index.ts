@@ -7,7 +7,7 @@ function setup() {
     fill("red")
     rect(100,300,175,200)
     fill("yellow")
-    rect(156,425,50,75)
+    rect(163,425,50,75)
     fill("darkred")
     triangle(90,300,285,300,187.5,150)
     fill("brown")
@@ -15,5 +15,5 @@ function setup() {
     fill("darkgreen")
     circle(325,290,100)
     circle(370,290, 100)
-    circle(348,270,100)
+    circle(348,250,100)
 }
