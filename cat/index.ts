@@ -8,17 +8,23 @@ function setup() {
     circle(300,210,25);
     circle(400,210,25);
     // create ears
-    fill("pink")
-    triangle(315, 100, 230, 135, 270 , 70);
-    triangle(400, 100, 480, 150, 465 , 80);
     
-    stroke()
-
+    fill("pink");
+    triangle(210, 130, 250, 40, 290, 110); 
+    triangle(410, 110, 450, 40, 490, 130); 
+   
     // nose   
     fill("pink");
     circle(350, 250, 55);
     fill("black");
     circle(340, 240, 10);
     circle(360, 240, 10);
-
+    // mouth
+    fill("black");
+    
+    rect(323, 322, 4, 10);
+    rect(325, 330, 16, 4);
+    rect(342, 330, 16, 4);
+    rect(359, 330, 16, 4);
+    rect(373, 322, 4, 10);
 }
