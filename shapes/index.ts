@@ -13,13 +13,13 @@ function draw() {
     ellipse(300, 220, 180, 200);
     
     // Schatten
-    fill(140, 30, 70, 150);
+    fill("purple");
     ellipse(300, 250, 160, 150);
 
     // Tentakeln
     fill("purple")
     strokeWeight(18);
-    stroke(180, 50, 90);
+    stroke("purple");
     noFill();
     
     for (let i = 0; i < 8; i++) {
@@ -40,7 +40,7 @@ function draw() {
         circle(300 + xOffset * 1.9 - wave * 0.8, 480, 8);
         
         strokeWeight(18);
-        stroke(180, 50, 90);
+        stroke("purple");
         noFill();
     }
 
