@@ -2,7 +2,7 @@
 
 function setup() {
   // create canvas
-  createCanvas(500,1000);
+  createCanvas(1000,1000);
 
   // create flower
  fill("lime");
@@ -15,12 +15,11 @@ function setup() {
   fill("yellow");
  circle(220,250,65);
 
-strokeWeight(15)
-
- noFill()
+strokeWeight(15);
+ noFill();
  stroke("darkgreen")
- arc(230,350,100,150,30,45)
- noStroke()
+ arc(230,350,100,150,30,45);
+ noStroke();
 
 
   // create flower
@@ -33,6 +32,26 @@ strokeWeight(15)
 
   fill("yellow");
  circle(220,250,65);
+ 
+  noFill();
+ stroke("darkgreen");
+ arc(500,350,100,150,30,45);
+ noStroke();
+
+ //Draw second Flower
+ 
+ fill("lime");
+ circle(550,250,80);
+ circle(500,300,80);
+ circle(450,250,80);
+ circle(500,200,80);
+
+ fill("yellow");
+ circle(500,250,65);
+
+
+
+
 
   
   
