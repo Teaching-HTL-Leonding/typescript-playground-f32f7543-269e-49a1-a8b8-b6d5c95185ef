@@ -6,7 +6,9 @@ const SCALE = 5;
 const MARGIN = 4;
 
 function setup() {
-    
+    // We must calculate the size of the canvas using the constants.
+    // Note that we assume that the soccer field has a width of 100m
+    // and a height of 70m.
     createCanvas((100 + MARGIN * 2) * SCALE, (70 + MARGIN * 2) * SCALE);
     background("green");
 
@@ -17,55 +19,41 @@ function setup() {
 
     push();
 
-    
+    // Note that we scale everything by the constant SCALE. We use the size values
+    // in meters as if they were pixels, and then scale them up by the SCALE factor.
+    // Experiment with different SCALE values to see how it works.
     scale(SCALE);
 
     // translate moves the origin of the coordinate system. 0/0 will not be
     // in the top-left corner, but MARGIN pixels to the right/down.
+    // Experiment with different MARGIN values to see how it works.
     translate(MARGIN, MARGIN);
 
-    // Field (100x70m)
-    rect(0, 0, 100, 70);
+    // TODO: Draw the soccer field as close as possible to a real soccer field.
+    // <<< ADD YOUR CODE HERE
 
-    // Midfield line
-    line(50, 0, 50, 70);
 
-    // Midfield circle (9.15m radius)
-    circle(50, 35, 9.15 * 2);
+circle(50,35,18.3)
+fill("white")
+circle(50,35,1)
+line(50,0.5,50,69.5)
+line(0.5,0.5,99.5,0.5)
+line(0.5,69.5,99.5,69.5)
+line(0.5,0.5,0.5,69.5)
+line(99.5,0.5,99.5,69.5)
+noFill()
+rect(0.5,17.5,17.5,35)
+rect(82,17.5,17.5,35)
+rect(0.5,24,6,22)
+rect(93.5,24,6,22)
 
-    // Penalty arc ("Strafraumhalbkreis")
-    // (9.15m radius, penalty spot is center)
-    circle(11, 35, 9.15 * 2);
-    circle(100 - 11, 35, 9.15 * 2);
 
-    // Penalty area ("Strafraum")
-    // (40.32m width, 16.5m depth)
-    fill("green");
-    rect(0, 35 - 40.32 / 2, 16.5, 40.32);
-    rect(100 - 16.5, 35 - 40.32 / 2, 16.5, 40.32);
-    noFill();
 
-    // Goal ("Tor")
-    // (7.32m width, 3m depth)
-    rect(-3, 35 - 7.32 / 2, 3, 7.32);
-    rect(100, 35 - 7.32 / 2, 3, 7.32);
 
-    // Goal area ("Torraum")
-    // (18.32m width, 5.5m depth)
-    rect(0, 35 - 18.32 / 2, 5.5, 18.32);
-    rect(100 - 5.5, 35 - 18.32 / 2, 5.5, 18.32);
 
-    // Penalty spot ("Elfmeterpunkt")
-    circle(11, 35, 0.5);
-    circle(100 - 11, 35, 0.5);
 
-    // Center spot ("Mittelpunkt")
-    circle(50, 35, 1);
 
-    // Corner arcs ("Viertelkreis")
-    // (1m radius)
-    arc(0, 0, 2, 2, 0, 90);
-    arc(0, 70, 2, 2, 270, 360);
-    arc(100, 0, 2, 2, 90, 180);
-    arc(100, 70, 2, 2, 180, 270);
+
+
+
 }
