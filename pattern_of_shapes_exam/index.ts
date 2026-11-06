@@ -3,7 +3,7 @@ function setup() {
 
 function mouseMoved() {
   createCanvas(600, 400);
-  background("white");
+  background(255, 255, 255);
 
   // create the yellow rectangles
   const rectWidth: number = width * 0.2;
