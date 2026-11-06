@@ -8,7 +8,7 @@ function mouseMoved() {
   // create the yellow rectangles
   const rectWidth: number = width * 0.2;
   const rectHeight: number = height * 0.2;
-  
+
   fill("gold")
   rect(width * 0.1, height * 0.1, rectWidth, rectHeight);
   rect(width * 0.7, height * 0.1, rectWidth, rectHeight);
@@ -21,10 +21,10 @@ function mouseMoved() {
 
   fill("steelblue")
   rect(width * 0.3, height * 0.3, blueRectWidth, blueRectHeight)
-  
+
   // create the red circles
   const circleDiameter: number = min(width, height) * 0.2
-  
+
   fill("tomato")
   circle(width * 0.2, height * 0.5, circleDiameter)
   circle(width * 0.8, height * 0.5, circleDiameter)
