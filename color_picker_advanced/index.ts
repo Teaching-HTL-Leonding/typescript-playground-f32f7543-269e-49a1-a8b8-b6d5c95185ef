@@ -7,7 +7,7 @@ function mouseMoved() {
     noStroke();
     const colorHue: number = round(mouseX);
     const colorSat: number = min(100, round(mouseY));
-    fill(mouseX, mouseY, 100);
+    fill(colorHue, colorSat, 100)
     rect(0, 0, width, height / 2);
 }
 
